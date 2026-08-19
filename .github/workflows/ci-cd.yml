@@ -106,6 +106,7 @@ jobs:
             --exclude 'venv/' \
             --exclude '.venv/' \
             --exclude 'mlruns/' \
+            --exclude 'space/' \
             ./ space/
           cd space
           git config user.name "github-actions[bot]"
