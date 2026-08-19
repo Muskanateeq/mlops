@@ -1,4 +1,17 @@
-# Iris Prediction API
+---
+title: Iris Flower Prediction
+emoji: 🌸
+colorFrom: purple
+colorTo: green
+sdk: gradio
+sdk_version: 5.0.0
+app_file: app.py
+pinned: false
+---
+
+# Iris Flower Prediction
+
+This Hugging Face Space provides a Gradio interface for the Iris classifier.
 
 ## MLflow
 
