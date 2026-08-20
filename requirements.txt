@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-scikit-learn
+scikit-learn==1.7.2
 pydantic
 mlflow>=3.0,<4.0
 # Gradio 5 imports HfFolder; keep the Hub client below its 1.0 removal.
