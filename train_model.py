@@ -17,6 +17,9 @@ DEFAULT_TRACKING_URI = (PROJECT_DIR / "mlruns").as_uri()
 
 def train() -> None:
     """Train the Iris classifier and record the run in MLflow."""
+    # MLflow 3.x requires an explicit opt-in for the local file-store backend.
+    # Remote tracking servers or database URIs are unaffected by this setting.
+    os.environ.setdefault("MLFLOW_ALLOW_FILE_STORE", "true")
     tracking_uri = os.getenv("MLFLOW_TRACKING_URI", DEFAULT_TRACKING_URI)
     experiment_name = os.getenv("MLFLOW_EXPERIMENT_NAME", "iris-classifier")
 
