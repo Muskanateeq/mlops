@@ -3,4 +3,6 @@ uvicorn
 scikit-learn
 pydantic
 mlflow>=3.0,<4.0
-gradio
+# Gradio 5 imports HfFolder; keep the Hub client below its 1.0 removal.
+gradio>=5.0,<6.0
+huggingface_hub>=0.32,<1.0
